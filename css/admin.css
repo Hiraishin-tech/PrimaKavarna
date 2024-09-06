@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+  background-color: rgb(209, 209, 209);
+}
+
+.admin-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-signin {
+  max-width: 350px;
+  padding: 1rem;
+  margin-top: 2em;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Chyba při přihlašování */
+.alert {
+    --bs-alert-padding-x: 0.5rem;
+    --bs-alert-padding-y: 0.5rem;
+}
+
+p.loginError {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+}
+
+/* Odsazení tlačítek */
+li.list-group-item a {
+    margin-right: 0.8vw;
+}
+
+/* Tlačítko uložit */
+form button.btn.btn-primary.ulozeni {
+    width: 130px;
+    height: 70px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Tlačítko pro přidání stránky */
+.btn.btn-outline-primary.me-2 {
+  margin: 20px 3px;
+}

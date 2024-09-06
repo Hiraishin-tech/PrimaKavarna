@@ -1,0 +1,775 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 20px;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Hlavička */
+header {
+    background: url(../img/header.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+/* Navigační menu */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.nav-background {
+    background: linear-gradient(rgba(67, 33, 33, 0.7), rgba(72, 33, 33, 0.7));
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 85px;
+    display: flex;
+}
+
+header nav {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    /* column-gap: 10px; */
+}
+
+header nav ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    padding: 0 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #ffffff46;
+    transition: 0.5s;
+    /* border-bottom: 2px solid #fff; */
+}
+
+#logo {
+    z-index: 100;
+}
+
+/* Nadpis */
+header h1 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Arial";
+    text-shadow: 1px 1px 15px #000;
+}
+
+header h1::after {
+    display: block;
+    content: "";
+    max-width: 600px;
+    border-bottom: 2px solid #fff;
+    margin: 0 auto;
+}
+
+header p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin-top: 10px;
+    font-style: italic;
+    font-family: Rosarivo;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* Sociální sítě */
+
+.fontyawesome {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fontyawesome a {
+    color: #fff;
+}
+
+.fontyawesome i {
+    margin-right: 30px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.fontyawesome .fa-facebook-f:hover {
+    color: rgb(75, 75, 246);
+    transition: 0.25s;
+}
+
+.fontyawesome .fa-instagram:hover {
+    color: palevioletred;
+    transition: 0.25s;
+}
+
+.fontyawesome .fa-youtube:hover {
+    color: rgb(244, 54, 54);
+    transition: 0.25s;
+}
+
+/* kaushan-script-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kaushan-script-v18-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* Section - obsah */
+#obsah .row h2 {
+    text-align: center;
+    font-size: 100px;
+    margin: 0.5em;
+    /* 0.5 em je jako 35px, bere se to z font-size */
+    font-family: "Kaushan Script";
+    font-style: italic;
+}
+
+#obsah .row p {
+    line-height: 1.7rem;
+    margin-bottom: 2.1rem;
+    text-align: justify;
+    text-indent: 1em;
+    /* 1em je jako 20px, protože font-size je 20px nastavený */
+}
+
+/* Obsah s obrázky */
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 45px;
+}
+
+.main-section p {
+    width: 300px;
+}
+
+.main-section img {
+    margin-bottom: 27px;
+}
+
+
+.main-section h3 {
+    font-family: "Caramel";
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.main-section h3::after {
+    display: block;
+    content: "";
+    width: 120px;
+    border-bottom: 1px solid #000;
+    position: relative;
+    right: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.main-section a:link,
+.main-section a:visited {
+    display: block;
+    text-decoration: none;
+    width: 130px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 13px;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+.main-section i {
+    padding-left: 18px;
+}
+
+.main-section a:hover,
+.main-section a:active {
+    border: 1px solid #000;
+}
+
+.main-section a:hover i {
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+
+.coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dobroty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zakusky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main-promotion */
+.main-promotion {
+    background-color: #A0785D;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.promotion-text {
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+.promotion-text p {
+    text-align: justify;
+    line-height: 1.5em;
+    max-width: 470px;
+    text-indent: 3%;
+    font-size: 1.2rem;
+}
+
+/* caramel-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Caramel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/caramel-v7-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+.promotion-text h3 {
+    font-family: "Caramel";
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+.promotion-image {
+    background: url(../img/zrnka-kavy.jpg);
+    width: 50%;
+    min-height: 75vh;
+    display: flex;
+}
+
+.prouzek {
+    width: 100px;
+    background-color: rgb(160, 120, 93, 0.7);
+}
+
+/* Our-tip */
+.our-tip {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.tip-images {
+    display: flex;
+    column-gap: 50px;
+}
+
+.tip-images img {
+    box-shadow: 15px 15px #805F49;
+    width: 322.66px;
+    height: 484px;
+}
+
+.tip-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.tip-text h3 {
+    font-family: "Caramel";
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.our-tip .tip-text p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Footer */
+
+/* caramel-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Caramel';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/caramel-v7-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* marck-script-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/marck-script-v20-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+footer {
+    background-color: #805F49;
+    height: 300px;
+}
+
+.footer-obsah {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+.menu p {
+    margin-bottom: 15px;
+    font-family: "Caramel";
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+footer nav ul li {
+    list-style: none;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.contact p {
+    /* margin-bottom: 20px; */
+    font-family: "Caramel";
+    font-size: 2.5rem;
+    color: #fff;
+    position: relative;
+    top: -39px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.open-hours p {
+    /* margin-bottom: 20px; */
+    font-family: "Caramel";
+    font-size: 2.5rem;
+    color: #fff;
+    position: relative;
+    top: -35px;
+}
+
+footer table {
+    color: #fff;
+}
+
+footer table th {
+    text-align: right;
+}
+
+footer table td {
+    text-align: left;
+    padding-left: 15px;
+}
+
+
+
+/* Nabídka - PrimaKavárna */
+
+
+.obrazek-cenik {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+table.cenik {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+table.cenik th {
+    padding-right: 1em;
+}
+
+
+.obrazek {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "obrazek";
+}
+
+/* bona-nova-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bona Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bona-nova-v10-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.obrazek p {
+    grid-area: obrazek;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    font-family: "Bona Nova";
+    text-shadow: 2px 2px 5px #000;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.obrazek img {
+    grid-area: obrazek;
+}
+
+
+/* Galerie - PrimaKavárna */
+.galerie-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.galerie-images a img {
+    width: 400px;
+}
+
+/* Rezervace - PrimaKavárna */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#obsah .row p.rezervovani {
+    font-size: 1.2em;
+}
+
+#obsah .row .contact-info p {
+    margin-bottom: 0px;
+}
+
+#obsah .row .contact-info a {
+    text-decoration: none;
+    color: #805F49;
+}
+
+
+#obsah .row .contact-info i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contact-form form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.contact-form .radka {
+    position: relative;
+    display: flex;
+}
+
+.contact-form form input {
+    width: 100%;
+    height: 90px;
+    font-size: 1.5em;
+    padding-left: 10px;
+    transition: all 0.25s;
+}
+
+.contact-form form label {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    color: #805F49;
+    font-weight: bold;
+    transition: all 0.25s;
+    font-size: 0.9em;
+}
+
+.contact-form form input:placeholder-shown {
+    height: 70px;
+}
+
+.contact-form form input:placeholder-shown+label {
+    left: 15px;
+    top: 0.6em;
+    font-size: 1.5em;
+    color: #b1b1b1;
+    cursor: text;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    height: 180px;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-top: 50px;
+    transition: all 0.5s;
+}
+
+.contact-form form textarea:placeholder-shown {
+    height: 140px;
+}
+
+.contact-form form textarea:placeholder-shown+label {
+    left: 15px;
+    top: 1.6em;
+    font-size: 1.5em;
+    color: #b1b1b1;
+    cursor: text;
+}
+
+.contact-form form textarea+label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: #805F49;
+    font-weight: bold;
+    transition: all 0.25s;
+    font-size: 0.9em;
+}
+
+.contact-form form input[type="submit"] {
+    width: 20%;
+    height: 70px;
+    border-radius: 10px;
+    padding-left: 0;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#obsah .row p.final-text {
+    text-align: center;
+    font-family: "Marck Script";
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+
+/* Kontakt - PrimaKavárna */
+#obsah section .row h2 {
+    font-size: 4.8em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.contact-info a {
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    border-bottom: 1px solid #805F49;
+}
+
+.info .contact-info p {
+    text-align: left;
+    text-indent: 0;
+}
+
+.info h3 {
+    font-family: "Caramel";
+    font-size: 3em;
+}
+
+.tabulka {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.info table th {
+    text-align: right;
+}
+
+.info table td {
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Mapa */
+section.mapa {
+    margin-bottom: 50px;
+}
+
+/* Formulář */
+.contact-form form h2 {
+    font-family: "Marck Script";
+    font-size: 2.5em;
+}
+
+
+/* Stránka neexistuje */
+section .stranka-neexistuje {
+    text-align: center;    
+    font-size: 5rem;
+}
+
+div.page-notFound {
+    display: flex;
+    justify-content: center;
+}
+
+/* Šipka nahoru pro odscrollování zpátky */
+#nahoru {
+    position: fixed;
+    font-size: 3.5rem;
+    color: #fff;
+    bottom: 1%;
+    right: 1%;
+    border: 1px solid #805F49;
+    background-color: #805F49;
+    cursor: pointer;
+    width: 70px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+#nahoru.zobrazit {
+    opacity: 1;
+}
+
+
+/* Ověření, zda v kontaktním a rezervačním formuláři uživatel napsal správně inputy */
+.contact-form form .status {
+    position: absolute;
+    right: 1%;
+    font-size: 3rem;    /* 48px */
+    top: 0;
+    bottom: 0;      /* Tím, že nastavím top 0 a bottom 0 se mi ikonky pro status roztáhnou na celý input */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: none; */
+    color: transparent;
+}
+
+.contact-form form .status.ok .fa-check {
+    display: block;    
+    color: green;     
+}
+
+.contact-form form .status.ok .fa-xmark {
+    display: none;
+}
+
+.contact-form form .status.spatne .fa-check {
+    display: none;
+}
+
+.contact-form form .status.spatne .fa-xmark {
+    display: block;
+    color: red;
+}

@@ -1,0 +1,212 @@
+@media (max-width: 750px) {
+    header nav ul {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    #logo {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-background {
+        height: 250px;
+    }
+
+    header nav ul li a:hover {
+        background-color: transparent;
+        transition: 0s;
+        /* border-bottom: 2px solid #fff; */
+        padding: 0;
+    }
+}
+
+/* Responzivní text */
+
+@media (max-width: 610px) {
+    header h1 {
+        font-size: 15vw;
+    }
+
+    header p {
+        font-size: 3.5vw;
+    }
+
+    .fontyawesome {
+        left: 55%;
+        font-size: 6vw;
+    }
+}
+
+/* Main-section*/
+@media (max-width: 1000px) {
+    .row {
+        padding: 0 5%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+
+    .main-section p {
+        width: 95%;
+    }
+
+    .coffee {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 2.5em;
+    }
+
+
+    .dobroty {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 2.5em;
+    }
+
+    .zakusky {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 2.5em;
+    }
+
+    .main-section h3 {
+        text-align: center;
+    }
+
+    .main-section h3::after {
+        margin: 0 auto;
+        margin-bottom: 20px
+    }
+
+    .main-section a {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .coffee {
+        flex-direction: column;
+    }
+
+    .dobroty {
+        flex-direction: column;
+    }
+
+    .zakusky {
+        flex-direction: column;
+    }
+
+    .main-section {
+        row-gap: 3rem;
+    }
+}
+
+/* Main-Promotion */
+@media (max-width: 1015px) {
+    .promotion-text {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 870px) {
+    .promotion-image {
+        width: 20%;
+    }
+
+    .promotion-text {
+        width: 80%;
+        align-items: flex-start;
+
+    }
+
+    .promotion-text p {
+        max-width: 670px;
+        margin-bottom: 10%;
+    }
+
+    .prouzek {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .promotion-text h3 {
+        display: flex;
+        text-align: right;
+    }
+
+}
+
+/* Our-tip */
+@media (max-width: 1000px) {
+    .our-tip {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .tip-images {
+        justify-content: center;
+    }
+
+    .tip-images img {
+        width: 30vw;
+        height: 30vh;
+    }
+}
+
+
+/* Nabídka - PrimaKavárna */
+@media (max-width: 900px) {
+    .obrazek-cenik {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .obrazek img {
+        max-width: 70vw;
+    }
+
+    .obrazek p {
+        font-size: 10vw;
+    }
+}
+
+/* Galerie - PrimaKavárna */
+@media (max-width: 910px) { 
+    .galerie-images a img {
+        width: 80vw;
+    }
+}
+
+/* Nadpisy ve stránkách */
+@media (max-width: 450px) {
+    #obsah .row h2 {
+        font-size: 25vw;
+    }
+
+    #obsah .nabidka.row.row h2 {
+        font-size: 23vw !important;
+    }
+
+    #obsah section .row h2 {
+        font-size: 22vw;
+    }
+}

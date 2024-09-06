@@ -1,0 +1,9 @@
+{
+    "require": {
+        "tinymce/tinymce": "5.10.9",
+        "tweeb/tinymce-i18n": "^2.0",
+        "primakurzy/responsivefilemanager": "^3.0",
+        "primakurzy/shortcode": "^1.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
